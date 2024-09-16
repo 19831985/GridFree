@@ -13,7 +13,7 @@ Bibtex @article{10.1093/plphys/kiab226,
     eprint = {https://academic.oup.com/plphys/advance-article-pdf/doi/10.1093/plphys/kiab226/37929045/kiab226.pdf},
 }
 
-## Implement Python version 3.6.5
+## Implement Python version 3.6.5(Windows 10 64bit version is available, check the download link below)
 * install Python 3.6.5, download link: https://www.python.org/downloads/release/python-365/
 <!--![screenshot](https://raw.githubusercontent.com/12HuYang/FreeCADITS/master/Training_intro.png)-->
 <!--![screenshot](https://raw.githubusercontent.com/12HuYang/GridFree/master/compare.png)
@@ -22,14 +22,14 @@ Bibtex @article{10.1093/plphys/kiab226,
 #### Linux user may need to use ```sudo pip3 install plantlabeller``` or ```sudo python3 -m pip install plantlabeller```.-->
 #### MacOS
 ##### install
-* execute ```python3 -m pip install -r requirements.txt``` to install required packages
+* execute ```python3.6 -m pip install -r requirements.txt``` to install required packages
 <!--* execute ```brew install gdal``` to install required packages
 * execute ```python3 -m pip install rasterio``` to install required packages-->
 ##### run the software
 * execute ```./run``` on a terminal to run the software
 #### Linux OS
 #####  install
-* execute ```python3 -m pip install -r requirements.txt``` to install required packages
+* execute ```python3.6 -m pip install -r requirements.txt``` to install required packages
 <!--* execute ```sudo add-apt-repository ppa:ubuntugis/ppa```
 * execute ```sudo apt-get update```
 * execute ```sudo apt-get install python-numpy gdal-bin libgdal-dev```
@@ -37,7 +37,11 @@ Bibtex @article{10.1093/plphys/kiab226,
 ##### run the software
 * execute ```./run``` on a terminal to run the software
 #### Windows OS 
-##### install
+
+##### Windows 10 64bit (Download and run ```tkinterGUI_nw.exe``` in dist folder)
+* Download link: https://www.dropbox.com/s/nf6vsu1q5meb1ho/GridFree_winOS.zip?dl=0
+
+##### install (if Windows 10 64bit doesn't work for you)
 * run ```cmd``` go to the path you downloaded GridFree, you can execute ```cd``` space ```your download path```
 * execute ```python -m pip install -r requirements.txt``` to install required packages
 * execute ```python -m pip install opencv-python``` for opencv package
@@ -67,6 +71,12 @@ Modify matplotlibrc file ADD: ```backend: TkAgg```
 - [1] ImageJ https://imagej.nih.gov/ij/download.html
 - [2] SeedCounter https://www.frontiersin.org/articles/10.3389/fpls.2016.01990/full
 - [3] GrainScan https://plantmethods.biomedcentral.com/articles/10.1186/1746-4811-10-23-->
+#### Polygon Area selection segment demo
+![screenshot](https://raw.githubusercontent.com/12HuYang/GridFree/master/PolygonSelectionDemo.gif)
+
+#### Area selection on PC and Cluster views
+![screenshot](https://raw.githubusercontent.com/12HuYang/GridFree/master/areasel_gridfree.gif)
+
 #### Area selection segment and delet demo
 ![screenshot](https://raw.githubusercontent.com/12HuYang/GridFree/master/areaselection.gif)
 ##### YouTube: https://youtu.be/oGYw1ZBcrhk
@@ -83,4 +93,7 @@ Modify matplotlibrc file ADD: ```backend: TkAgg```
 ![screenshot](https://raw.githubusercontent.com/12HuYang/GridFree/master/corns_demo.gif)
 ##### YouTube: https://youtu.be/1ngHQsUFWH4
 
+<!--```
+python3.8 trainNN.py ./resnet50.json testsetfolder traingsetfolder ResNet50 modelweight 4 3 Adam binary_crossentropy tempfolder testsetlabel.csv 0.6 False False True False trainingsetlabel.csv
+```-->
 
